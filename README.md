@@ -47,7 +47,7 @@ Criação de features derivadas para capturar relações complexas:
 - `razao_valor_renda = valor_imovel / renda_mensal`: mede affordability
 
 **5. Normalização**
-StandardScaler aplicado em features numéricas (`renda_mensal`, `score_credito`, `idade`, `valor_imovel`) após o split treino-teste para evitar `data leakage`.
+StandardScaler aplicado em features numéricas (`renda_mensal`, `score_credito`, `idade`, `valor_imovel`, `composicao_familiar`) após o split treino-teste para evitar `data leakage`.
 
 **6. Cross-Validation (5-folds)**
 Validação cruzada com re-encoding em cada fold garantiu avaliação robusta. CV RMSE (0.46) próximo ao teste (0.44) confirma boa generalização.
